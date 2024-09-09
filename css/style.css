@@ -32,7 +32,6 @@ nav {
     line-height: 80px;
     margin: 0;
     display: inline-block;
-
 }
 
 .logo{
@@ -91,5 +90,76 @@ nav {
     font-size: 32px;
 }
 
+/* Serviços */
+.services-container{
+    padding: 5rem 0;
+}
 
+.services-container ul{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
 
+.services-container li{
+    flex: 1 1 200px; /* Estudas as propiedades! */
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.fas{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-shield-alt{
+    color:#2cc76a;
+}
+
+.fa-rocket{
+    color: orange;
+}
+
+.fa-comment{
+    color: rgb(57, 57, 255);
+}
+
+/* Preços e planos*/
+
+.pricing-container{
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.pricing-container h2{
+    font-size: 36px;
+}
+
+.pricing-container p{
+    font-size: 20px;
+}
+
+.plans-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.plan{
+    flex: 1;
+    margin: 20px 0;
+    max-width: 275px;
+}
+
+.plan ul{
+    padding: 0;
+}
+
+.plan li{
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ccc;
+}
