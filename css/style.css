@@ -142,7 +142,7 @@ nav {
 
 .plans-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Vai espaçar os itens igualmente */
     width: 90%;
     margin: 50px auto 0;
 }
@@ -151,10 +151,11 @@ nav {
     flex: 1;
     margin: 20px 0;
     max-width: 275px;
+    margin: 0 20px; /* Afasta lateralmente os elementos*/
 }
 
 .plan ul{
-    padding: 0;
+    padding: 0; 
 }
 
 .plan li{
@@ -162,4 +163,137 @@ nav {
     height: 50px;
     line-height: 50px;
     background-color: #ccc;
+    color: #333;
 }
+
+.plan .price{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #2cc76a;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    margin: 0 auto -50px; /* Vai colocar a bolinha de preço dentro da lista*/
+    font-size: 18px;
+    position: relative; /* O elemento vai ficar por cima da lista */
+}
+
+.plan .plan-name{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #202b34;
+    padding: 50px 0;
+}
+
+.plan .plan-btn{
+    background-color: #2cc762;
+    color: #FFF;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+.plan .recommended {
+    background-color: #f45c57;
+  }
+
+  /* Área para procurar um domínio*/
+
+  .searchdomain-container{
+    background-color: #34454e;
+    text-align: center;
+    padding: 5rem 0;
+  }
+
+  .searchdomain-container h2{
+    color: #FFF;
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  .searchdomain-container p{
+    color: #FFF;
+    font: 24px;
+    margin-bottom: 25px;
+  }
+
+  .services-container input{
+    display: block; /* Deixar os inputs em uma linha só */
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+
+  .searchdomain-container input[type="text"] {
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .searchdomain-container input[type="submit"]{
+    background-color: #50df89;
+    padding: 15px 30px;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    opacity: .9;
+  }
+
+  .searchdomain-container input[type="submit"]:hover {
+    opacity: 1;
+  }
+
+  /* Formulário do contato */
+  .contact-container{
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+  }
+
+  .contact-container h2{
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .contact-container p{
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+  }
+
+  .contact-container textarea {
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+  }
+
+  .contact-container input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #2cc76a;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* footer */
+
+  footer {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0 100px;
+  }
